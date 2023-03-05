@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>历代名医~妙手回春，神医圣手，医术超群</title>
+    <link rel="shortcut icon" href="../../img/logo.ico">
+    <link rel="stylesheet" href="../../css/doctor.css">
+    <script src="../../js/doctor.js" language="javascript" type="text/javascript"></script>
+    <link href="../../iconfont/关闭2/iconfont.css" rel="stylesheet" type="text/css">
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1),
+                getCookie = localStorage.getItem(str);
+            if (getCookie) {
+                $("html,body").scrollTop(getCookie);
+            }
+        });
+        $(window).scroll(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(window).scrollTop(); //在zepto下这里使用$(document)是获取不到页面滚动的高度，在jq下是可以的
+            localStorage.setItem(str, top);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="back_block">
+        <p id="back"><strong>«</strong>返回</p>
+    </div>
+    <div class="question_enter">
+        <img src="../../img/历代名医/答题区.png" alt="">
+    </div>
+    <!-- <img src="./img/历代名医/答题区.png" alt="" class="sticky_img"> -->
+    <div class="question_box">
+        <span class="iconfont icon-guanbi"></span>
+        <div class="question">
+            <div class="q1">
+                <h2>【1/3】中医具有悠久的历史，是我国宝贵文化遗产中的一部分。下列关于中医常识的说法中，不正确的是（ ）</h2>
+                <div>
+                    <p class="option">A</p>
+                    <p>华佗的五禽戏是一种通过模仿虎、鹿、熊、猿、鸟五种动物的动作来保健的气功功法</p>
+                </div>
+                <div>
+                    <p class="option">B</p>
+                    <p>神医扁鹊的本名是秦越人</p>
+                </div>
+                <div>
+                    <p class="option answer">C</p>
+                    <p>按照中医的理论，荔枝和芒果都属于温热性水果，适合身体寒凉的人吃</p>
+                </div>
+                <div>
+                    <p class="option">D</p>
+                    <p>孙思邈写作了著名的中医著作《千金要方》，被尊称为“药王”</p>
+                </div>
+                <div class="sure_btn"><button>确&emsp;定</button></div>
+            </div>
+            <div class="q2">
+                <h2>【2/3】下列古代名医与其所在朝代对应错误的是（ ）</h2>
+                <div>
+                    <p class="option answer">A</p>
+                    <p>张仲景——隋朝</p>
+                </div>
+                <div>
+                    <p class="option">B</p>
+                    <p>孙思邈——唐朝</p>
+                </div>
+                <div>
+                    <p class="option">C</p>
+                    <p>华佗——东汉</p>
+                </div>
+                <div>
+                    <p class="option">D</p>
+                    <p>李时珍——明朝</p>
+                </div>
+                <div class="sure_btn"><button>确&emsp;定</button></div>
+            </div>
+            <div class="q3">
+                <h2>【3/3】中国古代有一位名医，其确立的六经辨证治疗原则受到历代医学家的推崇，被后世尊称为“医圣”，这位名医是（）</h2>
+                <div>
+                    <p class="option answer">A</p>
+                    <p>张仲景</p>
+                </div>
+                <div>
+                    <p class="option">B</p>
+                    <p>李时珍</p>
+                </div>
+                <div>
+                    <p class="option">C</p>
+                    <p>华佗</p>
+                </div>
+                <div>
+                    <p class="option">D</p>
+                    <p>孙思邈</p>
+                </div>
+                <div class="sure_btn"><button>确&emsp;定</button></div>
+            </div>
+        </div>
+        <div class="estimate">
+            <div>
+                <p></p>
+                <div class="est_btn">
+                    <button class="prev_question">上一题</button>
+                    <button class="again_btn">重&emsp;做</button>
+                    <button class="analysis_btn">解&emsp;析</button>
+                    <button class="next_question">下一题</button>
+                </div>
+            </div>
+        </div>
+        <div class="analysis">
+            <div>
+                <p>解析：</p>
+                <div class="a1 analysis_text">
+                    <p>
+                        &emsp;&emsp;C项错误，我国古代就有“药食同源”之说，许多食物即药物，它们之间并无绝对的分界线，古代医学家将中药的“四性”“五味”理论运用到食物之中，认为每种食物也具有“四性”“五味”。“四性”又称四气，即寒、热、温、凉，“五味”即辛、甘、酸、苦、咸。按照分类，芒果属于寒凉性水果，适合热性体质、热性症状者食用，荔枝属于温热性水果，适合寒性体质、寒性症状者食用。 正确答案为C。
+                    </p>
+                </div>
+                <div class="a2 analysis_text">
+                    <p>
+                        &emsp;&emsp;A项错误：张仲景是东汉末年著名医学家，不是隋朝。张仲景被后人尊称为“医圣”。
+                        <br>&emsp;&emsp;B项正确：孙思邈是唐代著名医药学家、道士，被后人尊称为“药王”。
+                        <br>&emsp;&emsp;C项正确：华佗是东汉末年著名的医学家。 <br>&emsp;&emsp;D项正确：李时珍是明代著名医药学家。
+                    </p>
+                </div>
+                <div class="a3 analysis_text">
+                    <p>
+                        &emsp;&emsp;第一步，本题考查文化常识。 第二步，张仲景(约公元150～154年—约公元215～219年)，名机，字仲景，东汉南阳涅阳县(今河南省邓州市穰东镇张寨村)人。东汉末年著名医学家，被后人尊称为“医圣”。张仲景广泛收集医方，写出了传世巨著《伤寒杂病论》。它确立的辨证论治原则，是中医临床的基本原则，是中医的灵魂所在。
+                    </p>
+                </div>
+            </div>
+            <div class="a_btn">
+                <div>
+                    <button class="return_btn">返&emsp;回</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <header>
+        <div>
+            <p>
+                ———&emsp;<strong>历代名医</stron>&emsp;———
+            </p>
+            <p class="text">
+                医之良，在工巧神圣；医之功，在望闻问切；医之学，在脉药方症。
+                <br>不知为不知，亦良医也。
+            </p>
+        </div>
+    </header>
+    
+    <section>
+        <div class="one_block">
+            <div class="one_typic">
+                <p>古代四大名医</p>
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="one_content">
+                <div>
+                    <img src="../../img/历代名医/扁鹊2.JPG" alt="">
+                    <p>
+                        <strong>扁鹊</strong>
+                <br>春秋战国时期
+            </p>
+            <a href="../二级及以下页面/名医子页/扁鹊.html">查看详情 ☛</a>
+        </div>
+
+        <div>
+            <img src="../../img/历代名医/张仲景2.jpeg" alt="">
+            <p>
+                <strong>张仲景</strong>
+                <br>东汉末年时期
+            </p>
+            <a href="../二级及以下页面/名医子页/张仲景.html">查看详情 ☛</a>
+        </div>
+        <div>
+            <img src="../../img/历代名医/李时珍2.JPG" alt="">
+            <p>
+                <strong>李时珍</strong>
+                <br>明代时期
+            </p>
+            <a href="../二级及以下页面/名医子页/李时珍.html">查看详情 ☛</a>
+        </div>
+        <div>
+            <img src="../../img/历代名医/华佗2.jpeg" alt="">
+            <p>
+                <strong>华佗</strong>
+                <br>东汉末年时期
+            </p>
+            <a href="../二级及以下页面/名医子页/华佗.html">查看详情 ☛</a>
+        </div>
+        </div>
+        </div>
+        <div class="two_block">
+            <div class="two_typic">
+                <p>历代名医</p>
+                <!-- <img src="" alt=""> -->
+            </div>
+            <div class="two_content">
+                <div class="one_page page">
+                    <div>
+                        <img src="../../img/历代名医/叶天士.png" alt="">
+                        <p>
+                            《温热论》
+                            <br>《临证指南医案》
+                            <br>《临证指南医案》
+                        </p>
+                        <p>叶 天 士</p>
+                        <p>
+                            在整个中国医学史上，叶桂都是一位具有巨大贡献的伟大医家。后人称其为“仲景、元化一流人也”。他首先是温病学派的奠基人物，又是一位对儿科、妇科、内科、外科、五官科无所不精、贡献很大的医学大师。史书称其“贯彻古今医术”，他是当之无愧的。无论其医学理论，还是治学态度都是值得后人珍惜和学习的宝贵遗产。特别是他那种谦恭好学、改名换姓求师学艺的精神永远是后世习医者的光辉典范。
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            《千金要方》在食疗、养生、养老方面做出了巨大贡献。孙氏能寿逾百岁高龄，就是他在积极倡导这些方面的理论与其自身实践相结合的效果。孙思邈的辉煌成就，生前就受到了人们的崇敬。人称“药王”、“药圣”，隋、唐两代都很器重他，知名人士亦多对他以礼事之。他去世后，人们在其故居的鉴山畔，虞诚奉祀。孙思邈在日本也享有盛誉，尤其是日本名医丹波康赖和小岛尚质等对他十分崇拜。
+                        </p>
+                        <p>孙 思 邈</p>
+                        <p>
+                            《临证指南医案》
+                            <br>《唐新本草》
+                            <br>《千金要方》
+                        </p>
+                        <img src="../../img/历代名医/孙思邈.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../../img/历代名医/宋慈.png" alt="">
+                        <p>
+                            《洗冤集录》
+                            <br>《内恕录》
+                            <br>《折狱龟鉴》
+                        </p>
+                        <p>宋 慈</p>
+                        <p>
+                            宋慈在法医学理论上和实践中所表现出来的却是唯物主义倾向。在对尸体的具体检验方面，即给死者诊断死因，技术性很强，在一定程度上难于为活人诊病。不仅要有良好的思想品德，而且必须具备深厚的医药学基础，把握许多科学知识和方法。儒者出身的宋慈，本无医药学及其他相关科学知识。
+                        </p>
+                    </div>
+                </div>
+                <div class="two_page page">
+                    <div>
+                        <img src="../../img/历代名医/李东恒.png" alt="">
+                        <p>
+                            《内外伤辨惑论》
+                            <br>《脾胃论》
+                            <br>《兰室秘藏》
+                        </p>
+                        <p>李 东 垣</p>
+                        <p>
+                            李东垣无贪欲，慈爱仁心的品格，和其医术一样值得世人学习。后期李东垣为自身精力有限，无法为更多患病者施治而忧心，经范宗师点悟，应将其医术传授延续，供后人学习解世人疾苦。回乡后经友人推荐，收罗天益为徒传授其医学，李东垣不但不收学费，还赠予罗天益重金供其妻儿生活，仁慈爱才之心可见。李东垣爱徒罗天益，在李东垣辞世后，也是耗时数年，将恩师所留医学经典全部整理成册，供后世传承。
+                        </p>
+                    </div>
+                    <div>
+                        <p>
+                            钱乙由于对小儿科作了四十年的深入钻研，终于摸清了小儿病诊治的规律，积累了丰富的临证经验，著有《伤寒论指微》五卷，《婴孺论》百篇等书，但皆散失不传。现存《小儿药证直诀》，或叫《小儿药证真诀》是钱乙逝世后六年，由他的学生阎季忠(一作考忠)将他的医学理论，医案和经验方，加以搜集，整理，于公元一一一九年编成的。此书共三卷，上卷言证，中卷为所治病例，下卷为方剂。
+                        </p>
+                        <p>钱 乙</p>
+                        <p>
+                            《伤寒论发微》
+                            <br>《婴孺论》
+                            <br>《钱氏小儿方》
+                        </p>
+                        <img src="../../img/历代名医/钱乙.png" alt="">
+                    </div>
+                    <div>
+                        <img src="../../img/历代名医/葛洪.png" alt="">
+                        <p>
+                            《正统道藏》
+                            <br>《万历续道藏》
+                            <br>《肘后备急方》
+                        </p>
+                        <p>葛 洪</p>
+                        <p>
+                            他一生的主要活动是从事炼丹和医学，既是一位儒道合一的宗教理论家，又是一位从事炼丹和医疗活动的医学家。葛洪敢于「疑古」，反对「贵远贱今」，强调创新，认为「古书虽多，未必尽善」，并在实际的行医、炼丹活动中，坚持贯彻重视实验的思想，这对于他在医学上的贡献是十分重要的。葛洪阅读大量医书，并注重分析与研究，在行医实践中，总结治疗心得并搜集民间医疗经验，以此为基础，完成了百卷著作《玉函方》。
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="two_btn">
+                <div class="btn1">1</div>
+                <div class="btn2">2</div>
+            </div>
+        </div>
+        </section>
+        <footer>
+            <div>
+                <img src="../../img/历代名医/草1.png" alt="">
+                <img src="../../img/历代名医/草2.png" alt="">
+                <img src="../../img/历代名医/草3.png" alt="">
+                <img src="../../img/历代名医/草4.png" alt="">
+                <img src="../../img/历代名医/草5.png" alt="">
+            </div>
+            <div></div>
+        </footer>
+</body>
+
+</html>

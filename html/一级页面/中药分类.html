@@ -1,0 +1,686 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>中药分类~世间百草皆有属性</title>
+    <link rel="shortcut icon" href="../../img/logo.ico">
+    <link href="../../iconfont/搜索/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="../../iconfont/分类图标/iconfont.css" rel="stylesheet" type="text/css">
+    <link rel="stylesheet" href="../../css/sort.css">
+    <script src="../../js/sort.js" language="javascript" type="text/javascript"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1),
+                getCookie = localStorage.getItem(str);
+            if (getCookie) {
+                $("html,body").scrollTop(getCookie);
+            }
+        });
+        $(window).scroll(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(window).scrollTop(); //在zepto下这里使用$(document)是获取不到页面滚动的高度，在jq下是可以的
+            localStorage.setItem(str, top);
+        });
+    </script>
+</head>
+
+<body>
+    <header>
+        <div class="top">
+            <div class="back_block">
+                <p id="back"><strong>«</strong>返回</p>
+            </div>
+            <div class="search">
+                <div>
+                    <p>世间百草皆有属性<br><span>「  寒热温凉 辛酸甘苦咸 四气五味 各有所司  」</span></p>
+                    <div>
+                        <input type="text" value="黄芪/白芷/枸杞">
+                        <span class="iconfont icon-sousuo myicon"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <section>
+        <div>
+            <div class="left_nav">
+                <ul>
+                    <li id="out1"><strong id="typic1"><span class="iconfont icon-yezi plant_icon"></span>&nbsp;植物类</strong>
+                        <ul id="in1" class="in">
+                            <li><a href="#plant_type1">清热解毒</a></li>
+                            <li><a href="#plant_type2">活血化瘀</a></li>
+                            <li><a href="#plant_type3">止咳化痰</a></li>
+                            <li><a href="#plant_type4">补血益气</a></li>
+                            <li><a href="#plant_type5">镇定安神</a></li>
+                            <li><a href="#plant_type6">消食化积</a></li>
+                            <li><a href="#plant_type7">祛风除湿</a></li>
+                        </ul>
+                    </li>
+                    <li id="out2"><strong id="typic2"><span class="iconfont icon-shengwu-04 animal_icon"></span>&nbsp;动物类</strong>
+                        <ul id="in2" class="in">
+                            <li><a href="#animal_type1">清热解毒</a></li>
+                            <li><a href="#animal_type2">活血化瘀</a></li>
+                            <li><a href="#animal_type3">止咳化痰</a></li>
+                            <li><a href="#animal_type4">补血益气</a></li>
+                            <li><a href="#animal_type5">镇定安神</a></li>
+                            <li><a href="#animal_type6">消食化积</a></li>
+                            <li><a href="#animal_type7">祛风除湿</a></li>
+                        </ul>
+                    </li>
+                    <li id="out3"><strong id="typic3"><span class="iconfont icon-kuangwupin mineral_icon"></span>&nbsp;矿物类</strong>
+                        <ul id="in3" class="in">
+                            <li><a href="#mineral_type1">清热解毒</a></li>
+                            <li><a href="#mineral_type2">活血化瘀</a></li>
+                            <li><a href="#mineral_type3">止咳化痰</a></li>
+                            <li><a href="#mineral_type4">补血益气</a></li>
+                            <li><a href="#mineral_type5">镇定安神</a></li>
+                            <li><a href="#mineral_type6">消食化积</a></li>
+                            <li><a href="#mineral_type7">祛风除湿</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="plant">
+                <!-- <div class="hair">
+
+                </div> -->
+                <div class="type type1" id="plant_type1">
+                    <div class="up">
+                        <p>| 清热解毒</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/01清热解毒/板蓝根.jpg" alt="" title="点击查看详情">
+                            <!-- <div></div> -->
+                            <p>板蓝根</p>
+                            <p>具有清热解毒，凉血，利咽的功效。主治外感发热，温病初起，咽喉肿痛，温毒发斑，痄腮，丹毒，痈肿疮毒。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/01清热解毒/黄连.jpeg" alt="" title="点击查看详情">
+                            <p>黄连</p>
+                            <p>具有活血祛瘀，通经止痛，清热解毒，凉血消痈之功效。用于胸痹心痛，脘腹胁痛，症瘕积聚，热痹疼痛，心烦不眠，月经不调，痛经经闭，疮疡肿痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/01清热解毒/连翘.jpg" alt="" title="点击查看详情">
+                            <p>连翘</p>
+                            <p>具有清热，解毒，散结，消肿之功效。主治温热，丹毒，斑疹，痈疡肿毒，瘰疬，小便淋闭。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/01清热解毒/金银花.jpg" alt="" title="点击查看详情">
+                            <p>金银花</p>
+                            <p>具有清热解毒之功效。主治外感风热或温病发热，中暑，热毒血痢，痈肿疔疮，喉痹，多种感染性疾病。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type1" id="plant_type2">
+                    <div class="up">
+                        <p>| 活血化瘀</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/02活血化瘀/赤芍.jpeg" alt="" title="点击查看详情">
+                            <p>赤芍</p>
+                            <p>具有清热凉血，活血祛瘀之功效。用于热入营血，温毒发斑，吐血衄血，目赤肿痛，肝郁胁痛，经闭痛经，瘾瘕腹痛，跌扑损伤，痈肿疮疡。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/02活血化瘀/红花.png" alt="" title="点击查看详情">
+                            <p>红花</p>
+                            <p>具有活血通经，散瘀止痛之功效。用于经闭，痛经，恶露不行，症瘕痞块，胸痹心痛，瘀滞腹痛，胸胁刺痛，跌扑损伤，疮疡肿痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/02活血化瘀/丹参.jpeg" alt="" title="点击查看详情">
+                            <p>丹参</p>
+                            <p>具有活血祛瘀，通经止痛，清心除烦，凉血消痈之功效。用于胸痹心痛，脘腹胁痛，症瘕积聚，热痹疼痛，心烦不眠，月经不调，痛经经闭，疮疡肿痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/02活血化瘀/益母草.jpg" alt="" title="点击查看详情">
+                            <p>益母草</p>
+                            <p>具有活血调经，利尿消肿，清热解毒之功效。用于月经不调，痛经经闭，恶露不尽，水肿尿少，疮疡肿毒。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type1" id="plant_type3">
+                    <div class="up">
+                        <p>| 止咳化痰</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/03止咳化痰/天南星.jpg" alt="" title="点击查看详情">
+                            <p>天南星</p>
+                            <p>具有燥湿化痰，祛风止痉，散结消肿的功效；用于顽痰咳嗽，风痰眩晕，中风痰壅，口眼㖞斜，半身不遂，癫痫，惊风，破伤风；外用治痈肿，蛇虫咬伤。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/03止咳化痰/瓜蒌.jpg" alt="" title="点击查看详情">
+                            <p>瓜蒌</p>
+                            <p>具有清热涤痰，宽胸散结，润肠之功效。用于肺热咳嗽，痰浊黄稠，胸痹心痛，乳痈、肺痈、肠痈肿痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/03止咳化痰/甘草.jpg" alt="" title="点击查看详情">
+                            <p>甘草</p>
+                            <p>具有补脾益气，清热解毒，祛痰止咳，缓急止痛，调和诸药之功效。常用于脾胃虚弱，倦怠乏力，心悸气短，咳嗽痰多，脘腹、四肢挛急疼痛，痈肿疮毒，缓解药物毒性、烈性。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/03止咳化痰/麻黄.jpg" alt="" title="点击查看详情">
+                            <p>麻黄</p>
+                            <p>具有发汗解表，宣肺平喘，利水消肿的功效。用于风寒表实证，胸闷喘咳，风水浮肿，风湿痹痛，阴疽，痰核。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type1" id="plant_type4">
+                    <div class="up">
+                        <p>| 补血益气</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/04补血益气/人参.jpg" alt="" title="点击查看详情">
+                            <p>人参</p>
+                            <p>具有补血益气、生津止渴、安神益智的功效。用于体虚欲脱，肢冷脉微，脾虚食少，肺虚喘咳，津伤口渴，内热消渴，久病虚羸，惊悸失眠，阳痿宫冷；心力衰竭，心原性休克。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/04补血益气/白芍.jpg" alt="" title="点击查看详情">
+                            <p>白芍</p>
+                            <p>具有养血调经、温阳祛湿、补体虚、健脾胃等功效。用于治疗风湿冷痛、风湿关节炎、腰肌劳损、体虚神衰、四肢抽搐、慢惊风、犬咬伤等病症。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/04补血益气/茯苓.jpg" alt="" title="点击查看详情">
+                            <p>茯苓</p>
+                            <p>具有补气血、利水渗湿，健脾，宁心的功效。用于水肿尿少，痰饮眩悸，脾虚食少，便溏泄泻，心神不安，惊悸失眠。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/04补血益气/枸杞.jpg" alt="" title="点击查看详情">
+                            <p>枸杞</p>
+                            <p>具有滋肾，润肺，补肝，明目的功效。用于肝肾阴亏，腰膝酸软，头晕，目眩，目昏多泪，虚劳咳嗽，消渴，遗精。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type1" id="plant_type5">
+                    <div class="up">
+                        <p>| 镇静安神</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/05镇静安神/合欢皮.jpg" alt="" title="点击查看详情">
+                            <p>合欢皮</p>
+                            <p>具有解郁，和血，宁心，消痈肿的功效。用于心神不安，忧郁失眠，肺痈，痈肿，瘰疬，筋骨折伤。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/05镇静安神/夜交藤.jpg" alt="" title="点击查看详情">
+                            <p>夜交藤</p>
+                            <p>具有养心安神，祛风，通络之功效。用于失眠，多梦，血虚身痛，肌肤麻木，风湿痹痛，风疹瘙痒。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/05镇静安神/柏子仁.jpg" alt="" title="点击查看详情">
+                            <p>柏子仁</p>
+                            <p>具有养心安神，润肠通便，止汗的功效。用于阴血不足，虚烦失眠，心悸怔忡，肠燥便秘，阴虚盗汗。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/05镇静安神/酸枣仁.jpg" alt="" title="点击查看详情">
+                            <p>酸枣仁</p>
+                            <p>具有养心补肝，宁心安神，敛汗，生津之功效。用于虚烦不眠，惊悸多梦，体虚多汗，津伤口渴。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type1" id="plant_type6">
+                    <div class="up">
+                        <p>| 消食化积</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/06消食化积/六神曲.jpg" alt="" title="点击查看详情">
+                            <p>六神曲</p>
+                            <p>具有健脾和胃，消食调中的作用。用于脾胃虚弱，饮食停滞，胸痞腹胀，小儿食积。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/06消食化积/山楂.jpg" alt="" title="点击查看详情">
+                            <p>山楂</p>
+                            <p>具有消食积，散瘀血，驱绦虫的功效。用于肉食积滞、胃烷胀满、泻痢腹痛、瘀血经闭、产后瘀阻、心腹刺痛、疝气疼痛、高血脂症。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/06消食化积/炒莱菔子.jpg" alt="" title="点击查看详情">
+                            <p>莱菔子</p>
+                            <p>具有消食除胀，降气化痰的功效。用于饮食停滞，脘腹胀痛，大便秘结，积滞泻痢，痰壅喘咳。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/06消食化积/炒麦芽.jpg" alt="" title="点击查看详情">
+                            <p>麦芽</p>
+                            <p>具有行气消食，健脾开胃，回乳消胀的功效。用于食积不消，脘腹胀痛，脾虚食少，乳汁郁积，乳房胀痛，妇女断乳，肝郁胁痛，肝胃气痛。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type1" id="plant_type7">
+                    <div class="up">
+                        <p>| 祛风除湿</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/1植物/07祛风除湿/丝瓜络.jpg" alt="" title="点击查看详情">
+                            <p>丝瓜络</p>
+                            <p>具有祛风，通络，活血，下乳的功效。用于治疗痹痛拘挛、胸胁胀痛、乳汁不通，乳痈肿痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/07祛风除湿/川乌.jpg" alt="" title="点击查看详情">
+                            <p>川乌</p>
+                            <p>具有祛风除湿，温经止痛的功效。用于风寒湿痹，关节疼痛，心腹冷痛，寒疝作痛及麻醉止痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/07祛风除湿/徐长卿.jpg" alt="" title="点击查看详情">
+                            <p>徐长卿</p>
+                            <p>具有镇静止痛，祛湿解毒的功效。用于风湿性关节痛、头痛、牙痛，跌打损伤，头晕，皮肤湿疹，蛇虫咬伤。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/1植物/07祛风除湿/秦艽.jpg" alt="" title="点击查看详情">
+                            <p>秦艽</p>
+                            <p>具有祛风湿，清湿热，止痹痛，退虚热的作用。用于风湿痹痛，中风半身不遂，筋脉拘挛，骨节酸痛，湿热黄疸，骨蒸潮热，小儿疳积发热。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerbg">
+                    <img src="../../img/分类/底3.png" alt="">
+                </div>
+            </div>
+            <div class="animal">
+                <!-- <div class="hair">
+
+                </div> -->
+                <div class="type type2" id="animal_type1">
+                    <div class="up">
+                        <p>| 清热解毒</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/01清热解毒/哈仔壳.jpg" alt="" title="点击查看详情">
+                            <p>蛤仔壳</p>
+                            <p>具有清热解毒的功效。用于臁疮，黄水疮。外用：适量，煅存性，研末撒。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/01清热解毒/土鳖虫.JPG" alt="" title="点击查看详情">
+                            <p>土鳖虫</p>
+                            <p>具有破血逐瘀，续筋接骨之功效。用于跌打损伤，筋伤骨折，血瘀经闭，产后瘀阻腹痛，瘾瘕痞块。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/01清热解毒/猴枣.jpg" alt="" title="点击查看详情">
+                            <p>猴枣</p>
+                            <p>具有清热镇惊，豁痰定喘，解毒消肿的功效。主治痰热喘咳，咽痛喉痹，惊痫，小儿急惊，瘰疬痰核。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/01清热解毒/石决明.png" alt="" title="点击查看详情">
+                            <p>石决明</p>
+                            <p>具有清热、镇静、降血压、拟交感神经的功效。用于风阳上扰、头痛眩晕，惊搐，骨蒸劳热，青盲内障。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type2" id="animal_type2">
+                    <div class="up">
+                        <p>| 活血化瘀</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/02活血化瘀/五灵脂.JPG" alt="" title="点击查看详情">
+                            <p>五灵脂</p>
+                            <p>生用行血止痛。治心腹血气诸痛，妇女经闭，产后瘀血作痛；外治蛇、蝎、蜈蚣咬伤。炒用止血。治妇女血崩，经水过多，赤带不绝。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/02活血化瘀/蜈蚣.jpg" alt="" title="点击查看详情">
+                            <p>蜈蚣</p>
+                            <p>具有息风镇痉，通络止痛，攻毒散结的功效。用于肝风内动，痉挛抽搐，小儿惊风，中风口，半身不遂，破伤风，风湿顽痹，偏正头痛，疮疡，瘰疬，蛇虫咬伤。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/02活血化瘀/麝香.jpg" alt="" title="点击查看详情">
+                            <p>麝香</p>
+                            <p>具有开窍醒神，活血通经，消肿止痛的功效。主治闭证神昏，疮疡肿毒，瘰疬痰核，咽喉肿痛，血瘀经闭，症瘕，心腹暴痛，头痛，跌打损伤，风寒湿痹，难产，死胎，胞衣不下。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/02活血化瘀/龙涎香.JPG" alt="" title="点击查看详情">
+                            <p>龙涎香</p>
+                            <p>具有行气活血，散结止痛，利水通淋的功效。用于咳喘气逆，气结癥积，心腹疼痛，淋病。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type2" id="animal_type3">
+                    <div class="up">
+                        <p>| 止咳化痰</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/03止咳化痰/海龙.JPG" alt="" title="点击查看详情">
+                            <p>海龙</p>
+                            <p>具有温肾壮阳，散结消肿的功效。用于阳痿遗精，症瘕积聚，瘰疬痰核，跌扑损伤；外治痈肿疔疮。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/03止咳化痰/燕窝.JPG" alt="" title="点击查看详情">
+                            <p>燕窝</p>
+                            <p>具有养阴润燥，益气补中，化痰止咳之功效。常用于养阴润燥，益气补中，化痰止咳。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/03止咳化痰/龙涎香.JPG" alt="" title="点击查看详情">
+                            <p>龙涎香</p>
+                            <p>具有行气活血，散结止痛，利水通淋的功效。用于咳喘气逆，气结癥积，心腹疼痛，淋病。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/03止咳化痰/瓦楞子.png" alt="" title="点击查看详情">
+                            <p>瓦楞子</p>
+                            <p>具有消痰化瘀，软坚散结，制酸止痛的功效。用于顽痰胶结，黏稠难咯，瘿瘤，瘰疬，症瘕痞块，胃痛泛酸。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type2" id="animal_type4">
+                    <div class="up">
+                        <p>| 补血益气</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/04补血益气/九香虫.JPG" alt="" title="点击查看详情">
+                            <p>九香虫</p>
+                            <p>具有理气止痛，温中助阳的功效。用于胃寒胀痛，肝胃气痛，肾虚阳痿，腰膝酸痛。膈脘滞气，脾肾亏损，元阳不足。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/04补血益气/阿胶.jpeg" alt="" title="点击查看详情">
+                            <p>阿胶</p>
+                            <p>具有补血，滋阴，润肺，止血的功效。主治血虚诸证，出血证，肺阴虚燥咳，热病伤阴，心烦失眠，阴虚风动，手足瘈疭。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/04补血益气/龟甲.jpg" alt="" title="点击查看详情">
+                            <p>龟甲</p>
+                            <p>具有滋阴潜阳，益肾强骨，养血补心，固经止崩之功效。用于阴虚潮热，骨蒸盗汗，头晕目眩，虚风内动，筋骨痿软，心虚健忘，崩漏经多。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/04补血益气/燕窝.JPG" alt="" title="点击查看详情">
+                            <p>燕窝</p>
+                            <p>具有养阴润燥，益气补中，化痰止咳之功效。常用于养阴润燥，益气补中，化痰止咳。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type2" id="animal_type5">
+                    <div class="up">
+                        <p>| 镇静安神</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/05镇定安神/水牛角.jpg" alt="" title="点击查看详情">
+                            <p>水牛角</p>
+                            <p>具有清热，凉血，定惊，解毒的功效。用于伤寒温疫热入血分，惊狂，烦躁，谵妄，斑疹，发黄，吐血，衄血，下血，痈疽肿毒。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/05镇定安神/牛黄.jpeg" alt="" title="点击查看详情">
+                            <p>牛黄</p>
+                            <p>具有清心，化痰，利胆，镇惊的功效。用于热病神昏、谵语，癫痫发狂，小儿惊风抽搐，牙疳，喉肿，口舌生疮，痈疽，疔毒。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/05镇定安神/珍珠母.jpg" alt="" title="点击查看详情">
+                            <p>珍珠母</p>
+                            <p>具有平肝，潜阳，定惊，止血的功效。用于头眩，耳鸣，心悸，失眠，癫狂，惊痫，吐血，衄血，妇女血崩。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/05镇定安神/马宝.JPG" alt="" title="点击查看详情">
+                            <p>马宝</p>
+                            <p>具有镇惊化痰、清热解毒之功效，用于惊痫癫狂、痰热内盛、神志昏迷、恶疮肿毒及失血等。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type2" id="animal_type6">
+                    <div class="up">
+                        <p>| 消食化积</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/06消食化积/鸡内金.JPG" alt="" title="点击查看详情">
+                            <p>鸡内金</p>
+                            <p>具有消积滞，健脾胃的功效。用于食积胀满，呕吐反胃，泻痢，疳积，消渴，遗溺，喉痹乳蛾，牙疳口疮。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/06消食化积/瓦楞子.png" alt="" title="点击查看详情">
+                            <p>瓦楞子</p>
+                            <p>具有消痰化瘀，软坚散结，制酸止痛的功效。用于顽痰胶结，黏稠难咯，瘿瘤，瘰疬，症瘕痞块，胃痛泛酸。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/06消食化积/燕窝.JPG" alt="" title="点击查看详情">
+                            <p>燕窝</p>
+                            <p>具有养阴润燥，益气补中，化痰止咳之功效。常用于养阴润燥，益气补中，化痰止咳。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/06消食化积/石决明.png" alt="" title="点击查看详情">
+                            <p>石决明</p>
+                            <p>具有清热、镇静、降血压、拟交感神经的功效。用于风阳上扰、头痛眩晕，惊搐，骨蒸劳热，青盲内障。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type2" id="animal_type7">
+                    <div class="up">
+                        <p>| 祛风除湿</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/2动物/07祛风除湿/乌梢蛇.JPG" alt="" title="点击查看详情">
+                            <p>乌梢蛇</p>
+                            <p>具有祛风湿，通经络，止痉之功效。用于风湿顽痹，肌肤麻木，筋脉拘挛，肢体瘫痪，破伤风，麻风，风疹疥癣。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/07祛风除湿/僵蚕.png" alt="" title="点击查看详情">
+                            <p>僵蚕</p>
+                            <p>具有息风止痉，祛风止痛，化痰散结之功效。常用于肝风夹痰，惊痫抽搐，小儿急惊，破伤风，中风口㖞，风热头痛，目赤咽痛，风疹瘙痒，发颐痄腮。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/07祛风除湿/癞蛤蟆皮.JPG" alt="" title="点击查看详情">
+                            <p>蟾皮</p>
+                            <p>具有清热解毒，利水消胀的功效。用于痈疽，肿毒，瘰疬，肿瘤，疳积腹胀，慢性气管炎。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/2动物/07祛风除湿/蕲蛇.JPG" alt="" title="点击查看详情">
+                            <p>蕲蛇</p>
+                            <p>具有祛风，通络，止痉的功效。用于风湿顽痹，麻木拘挛，中风口眼歪斜，半身不遂，抽搐痉挛，破伤风，麻风疥癣。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerbg">
+                    <img src="../../img/分类/底3.png" alt="">
+                </div>
+            </div>
+            <div class="mineral">
+                <!-- <div class="hair">
+
+                </div> -->
+                <div class="type type3" id="mineral_type1">
+                    <div class="up">
+                        <p>| 清热解毒</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/01清热解毒/朱砂.jpg" alt="" title="点击查看详情">
+                            <p>朱砂</p>
+                            <p>具有安神，定惊，明日，解毒之功效。用于癫狂，惊悸，心烦，失眠，眩晕，目昏，肿毒，疮疡，疥癣。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/01清热解毒/滑石.jpg" alt="" title="点击查看详情">
+                            <p>滑石</p>
+                            <p>具有清热，渗湿，利窍的功效。用于暑热烦渴，小便不利，水泻，热痢，淋病，黄疸，水肿，衄血，脚气，皮肤湿烂。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/01清热解毒/石膏.jpg" alt="" title="点击查看详情">
+                            <p>石膏</p>
+                            <p>生用解肌清热，除烦止渴。治热病壮热不退，心烦神昏，谵语发狂，口渴咽干，肺热喘急，中暑自汗，胃火头痛、牙痛，热毒壅盛，发斑发疹，口舌生疮。煅敷生肌敛疮。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/01清热解毒/芒硝.jpg" alt="" title="点击查看详情">
+                            <p>芒硝</p>
+                            <p>具有泻下通便，润燥软坚，清火消肿之功效。用于实热积滞，腹满胀痛，大便燥结，肠痈肿痛等病症的治疗；外治乳痈，痔疮肿痛。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type3" id="mineral_type2">
+                    <div class="up">
+                        <p>| 活血化瘀</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/02活血化瘀/琥珀.jpg" alt="" title="点击查看详情">
+                            <p>琥珀</p>
+                            <p>具有镇惊安神，散瘀止血，利水通淋的功效。用于惊风癫痫，惊悸失眠，血淋血尿，小便不通，妇女闭经，产后停瘀腹痛，痈疽疮毒，跌打创伤。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/02活血化瘀/紫石英.jpg" alt="" title="点击查看详情">
+                            <p>紫石英</p>
+                            <p>具有镇心，安神，降逆气，暖子宫的功效。用于虚劳惊悸，咳逆上气，妇女血海虚寒不孕。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/02活血化瘀/自然铜.jpg" alt="" title="点击查看详情">
+                            <p>自然铜</p>
+                            <p>具有散瘀止痛，续筋接骨的功效。用于跌打损伤，筋骨折伤，瘀肿疼痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/02活血化瘀/花蕊石.jpg" alt="" title="点击查看详情">
+                            <p>花蕊石</p>
+                            <p>具有化瘀止血的功效。用于咯血，吐血，衄血，外伤出血等多种出血，跌扑伤痛，也可用治外伤瘀肿疼痛。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type3" id="mineral_type3">
+                    <div class="up">
+                        <p>| 止咳化痰</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/03止咳化痰/云母石.jpg" alt="" title="点击查看详情">
+                            <p>云母石</p>
+                            <p>具有镇静，止血的功效。用于心悸失眠，咯血，吐血。外用治创伤出血。 </p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/03止咳化痰/玄晶石.jpg" alt="" title="点击查看详情">
+                            <p>玄晶石</p>
+                            <p>具有滋阴，降火，软坚，消痰的功效。用于阳盛阴虚，壮热烦渴，头风脑痛，目赤障翳，重舌，木舌，咽喉生疮。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/03止咳化痰/硼砂.jpg" alt="" title="点击查看详情">
+                            <p>硼砂</p>
+                            <p>具有清热消痰，解毒防腐之功效。内服，治痰热咳嗽及噎膈积聚、诸骨鲠喉；外用，治咽喉肿痛，口舌生疮，目赤翳障胬肉，阴部溃疡。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/03止咳化痰/青礞石.jpg" alt="" title="点击查看详情">
+                            <p>青礞石</p>
+                            <p>具有坠痰下气，平肝镇惊之功效。用于顽痰胶结，咳逆喘急，癫痫发狂，烦躁胸闷，惊风抽搐。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type3" id="mineral_type4">
+                    <div class="up">
+                        <p>| 补血益气</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/04补血益气/磁石.jpg" alt="" title="点击查看详情">
+                            <p>磁石</p>
+                            <p>具有潜阳纳气，镇惊安神的功效。用于头目眩晕，耳鸣耳聋，虚喘，惊痫，怔忡。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/04补血益气/秋石.jpg" alt="" title="点击查看详情">
+                            <p>秋石</p>
+                            <p>具有滋阴降火的功效。用于骨蒸劳热，咳嗽，咳血，咽喉肿痛，噎食反胃，遗精，白浊，膏淋，妇女赤白带下。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/04补血益气/紫石英.jpg" alt="" title="点击查看详情">
+                            <p>紫石英</p>
+                            <p>具有镇心，安神，降逆气，暖子宫的功效。用于虚劳惊悸，咳逆上气，妇女血海虚寒不孕。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/04补血益气/黑矾.jpg" alt="" title="点击查看详情">
+                            <p>绿矾</p>
+                            <p>具有除湿，解毒，收敛，止血的功效。用于黄疸，贫血，胃肠出血；外用治湿疹疥癣，口疮。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type3" id="mineral_type5">
+                    <div class="up">
+                        <p>| 镇静安神</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/05镇定安神/磁石.jpg" alt="" title="点击查看详情">
+                            <p>磁石</p>
+                            <p>具有潜阳纳气，镇惊安神的功效。用于头目眩晕，耳鸣耳聋，虚喘，惊痫，怔忡。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/05镇定安神/紫石英.jpg" alt="" title="点击查看详情">
+                            <p>紫石英</p>
+                            <p>具有镇心，安神，降逆气，暖子宫的功效。用于虚劳惊悸，咳逆上气，妇女血海虚寒不孕。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/05镇定安神/蛇含石.jpg" alt="" title="点击查看详情">
+                            <p>蛇含石</p>
+                            <p>具有安神镇惊，止血定痛之功效。用于心悸，惊痫，肠风血痢，胃痛，痈疮肿毒，骨节酸痛。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/05镇定安神/龙骨.jpg" alt="" title="点击查看详情">
+                            <p>龙骨</p>
+                            <p>具有镇惊安神，平肝潜阳，收敛固涩的功效。用于心神不宁，心悸失眠，惊痫癫狂，肝阳眩晕，滑脱诸证湿疮痒疹，疮疡久溃不敛。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type3" id="mineral_type6">
+                    <div class="up">
+                        <p>| 消食化积</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/06消食化积/石青.jpg" alt="" title="点击查看详情">
+                            <p>石青</p>
+                            <p>具有祛痰，催吐，破积，明目的功效。用于风痰癫痫，惊风，目痛，目翳，创伤，痈肿。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/06消食化积/硇砂.jpg" alt="" title="点击查看详情">
+                            <p>硇砂</p>
+                            <p>具有消积软坚，化腐生肌，祛痰，利尿之功效。用于癓瘕积聚，噎膈反胃，喉痹肿痛，痈肿，瘰疬，翳障，息肉，赘疣。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/06消食化积/青礞石.jpg" alt="" title="点击查看详情">
+                            <p>青礞石</p>
+                            <p>具有坠痰下气，平肝镇惊之功效。用于顽痰胶结，咳逆喘急，癫痫发狂，烦躁胸闷，惊风抽搐。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/06消食化积/黑矾.jpg" alt="" title="点击查看详情">
+                            <p>绿矾</p>
+                            <p>具有除湿，解毒，收敛，止血的功效。用于黄疸，贫血，胃肠出血；外用治湿疹疥癣，口疮。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="type type3" id="mineral_type7">
+                    <div class="up">
+                        <p>| 祛风除湿</p>
+                    </div>
+                    <div class="down">
+                        <div>
+                            <img src="../../img/分类/3矿物/07祛风除湿/弥陀僧.jpg" alt="" title="点击查看详情">
+                            <p>密陀僧</p>
+                            <p>具有燥湿，杀虫，敛疮的功效。用于湿疹，疥，癣，腋下狐臭，疮疡溃破久不收口。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/07祛风除湿/朴硝.jpg" alt="" title="点击查看详情">
+                            <p>朴硝</p>
+                            <p>具有泻热，润燥，软坚的功效。用于实热积滞，腹胀便秘，停痰积聚，目赤肿痛，喉痹，痈肿。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/07祛风除湿/煅石膏.jpg" alt="" title="点击查看详情">
+                            <p>煅石膏</p>
+                            <p>具有收湿，生肌，敛疮，止血的功效。外治溃疡不敛，湿疹瘙痒，水火烫伤，外伤出血。</p>
+                        </div>
+                        <div>
+                            <img src="../../img/分类/3矿物/07祛风除湿/路路通.jpg" alt="" title="点击查看详情">
+                            <p>路路通</p>
+                            <p>具有祛风通络，利水除湿的功效。用于肢体痹痛，手足拘挛，胃痛，水肿，胀满，经闭，乳少，痈疽，痔漏，疥癣，湿疹。</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="footerbg">
+                    <img src="../../img/分类/底3.png" alt="">
+                </div>
+            </div>
+
+        </div>
+    </section>
+</body>
+
+</html>

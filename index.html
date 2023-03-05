@@ -1,0 +1,280 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>本草阁，承神农文化，传本草精华，续中药神话</title>
+    <link rel="shortcut icon" href="./img/logo.ico">
+    <link rel="stylesheet" href="css/homepage.css">
+    <link href="./iconfont/iconfont/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="./iconfont/关闭2/iconfont.css" rel="stylesheet" type="text/css">
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <script src="./js/homepage.js" language="javascript" type="text/javascript"></script>
+    <script src="js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1),
+                getCookie = localStorage.getItem(str);
+            if (getCookie) {
+                $("html,body").scrollTop(getCookie);
+            }
+        });
+        $(window).scroll(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(window).scrollTop(); //在zepto下这里使用$(document)是获取不到页面滚动的高度，在jq下是可以的
+            localStorage.setItem(str, top);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="box">
+        <header>
+            <div class="top">
+                <div class="logo">
+                    <img src="./img/logo.png">
+                    <span>本草阁</span>
+                </div>
+                <div class="nav">
+                    <ul>
+                        <li><a href="./html/一级页面/中药分类.html">中药分类</a></li>
+                        <li><a href="./html/一级页面/理疗工具.html">理疗工具</a></li>
+                        <li><a href="./html/一级页面/穴位图.html">穴位图</a></li>
+                        <li><a href="./html/一级页面/医学典籍.html">医学典籍</a></li>
+                        <li><a href="./html/一级页面/历代名医.html">历代名医</a></li>
+                    </ul>
+                    <a href="#" class="menu">菜单</a>
+                </div>
+            </div>
+            <div class="banner">
+                <div class="swiper-container">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img src="./img/首页/banner1.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/首页/banner2.jpg" />
+                        </div>
+                        <div class="swiper-slide">
+                            <img src="./img/首页/banner1.jpg" />
+                        </div>
+                    </div>
+                </div>
+                <div class="banner-text">
+                    <p>本草阁</p>
+                    <p>承神农文化,传本草精华,续中药神话</p>
+                </div>
+            </div>
+        </header>
+        <section>
+            <div class="one">
+                <div class="flow">
+                    <div class="fp-tableCell">
+                        <div class="title">
+                            <h1 class="title-text">形成与发展</h1>
+                            <p class="title-description">中国医药学是中国历代医药工作者，在长达数千年的医疗实践中，以古代哲学、自然科学为指导，摸索总结出来的具有独特理论体系的学科。</p>
+                        </div>
+                        <div class="inner-item">
+                            <div class="i-process end">
+                                <div class="list clearfix">
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <p>原始初现</p>
+                                        <div class="light por"></div>
+                                        <div class="circle por t-f fl ">
+                                            <span class="iconfont icon-zhiwu myicon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-zhongyaoyinpian myicon"></span>
+                                        </div>
+                                        <div class="light por"></div>
+                                        <p>上古起源</p>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <p>春秋孕育</p>
+                                        <div class="light por"></div>
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-caomuxi myicon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-heimaicao myicon"></span>
+                                        </div>
+                                        <div class="light por"></div>
+                                        <p>秦汉奠基</p>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <p>晋唐发展</p>
+                                        <div class="light por"></div>
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-gancao myicon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-yimucao myicon"></span>
+                                        </div>
+                                        <div class="light por"></div>
+                                        <p>宋元突破</p>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <p>明清发展</p>
+                                        <div class="light por"></div>
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-xiakucao myicon"></span>
+                                        </div>
+                                    </div>
+                                    <div class="btn h poa t-c" style="transform: translate(0px, 0px); opacity: 1;">
+                                        <div class="circle por t-f fl">
+                                            <span class="iconfont icon-siyecao myicon"></span>
+                                        </div>
+                                        <div class="light por"></div>
+                                        <p>现代腾飞</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <script type="text/javascript">
+                    $(function() {
+
+                        $(".i-process .btn").eq(0).addClass("cur")
+
+                        var LightNum = 0,
+                            LightAuto = setInterval(function() {
+
+                                LightNum++;
+
+                                if (LightNum == $(".i-process .btn").length) {
+
+                                    LightNum = 0
+
+                                }
+
+                                $(".i-process .btn").eq(LightNum).addClass("cur").siblings().removeClass("cur")
+
+                            }, 3000);
+
+                    });
+                </script>
+            </div>
+            <div class="two">
+                <div class="boxtwo">
+                    <div class="ancient">
+                        <div class="p1">神农</div>
+                        <div class="p2">中\药\鼻\祖</div>
+                    </div>
+                    <div class="photo">
+                        <div class="glodborder"></div>
+                        <div class="sn">
+                            <img src="./img/首页/神农.png" />
+                        </div>
+                    </div>
+                    <div class="profile">
+                        <p>
+                            远古时期，百姓以采食野生瓜果，生吃动物蚌蛤为生，腥臊恶臭伤腹胃，经常有人受毒害得病死亡，寿命很短。炎帝神农氏为“宣药疗疾”，救夭伤人命，使百姓益寿延年，他跋山涉水，行遍三湘大地，尝遍百草，了解百草之平毒寒温之药性。为民找寻治病解毒良药，他几乎嚼尝过所有植物，“一日遇七十毒”。神农在尝百草的过程中，识别了百草，发现了具有攻毒祛病、养生保健作用的中药。由此令民有所“就”，不复为“疾病”，故先民封他为“药神”。
+                        </p>
+                        <div class="more">
+                            <a href="./html/一级页面/历代名医.html">更&nbsp;多</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="three">
+                <div class="threebox">
+                    <div class="threeleft">
+                        <div>
+                            <input type="image" src="./img/首页/three/book3.png">
+                            <input type="image" src="./img/首页/three/book2.png">
+                            <input type="image" src="./img/首页/three/book1.jpg">
+                            <input type="image" src="./img/首页/three/book4.jpg">
+                        </div>
+                        <div class="cover">
+                            <p>
+                                中医四大典籍
+                            </p>
+                        </div>
+                    </div>
+                    <div class="threeright">
+                        <div>
+                            <p>
+                                中医药学是具有中国特色的生命科学，其科学性则是体现在了“中医四大经典”之中，这些是前人宝贵的诊疗理论和丰富的临床经验。 新世纪中医的发展需要创新，而创新则离不开继承，继承是基础，而继承的第一步便是熟读中医古籍经典。
+                            </p>
+                            <div class="other">
+                                <a href="./html/一级页面/医学典籍.html">更多典籍</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="four">
+                <div class="fourbox">
+                    <div class="fourleft">
+                        <div class="word" id="look" title="点击查看详情">
+                            <div><img src="./img/首页/look.png" /></div>
+                            <p>观气色</p>
+                        </div>
+                        <div class="word" id="listen" title="点击查看详情">
+                            <div><img src="./img/首页/listen.png" /></div>
+                            <p>听声息</p>
+                        </div>
+                        <div class="word" id="ask" title="点击查看详情">
+                            <div><img src="./img/首页/ask.png" /></div>
+                            <p>询问症状</p>
+
+                        </div>
+                        <div class="word" id="touch" title="点击查看详情">
+                            <div><img src="./img/首页/touch.png" /></div>
+                            <p>摸脉象</p>
+                        </div>
+                    </div>
+                    <div class="fourright">
+                        <img src="./img/首页/stone.png" />
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <!-- <div class="footer_up"><img src="./img/首页/test2.jpg" alt=""></div> -->
+            <div class="footer_down">
+                <div><a href="./html/一级页面/中药分类.html">中药分类</a>&emsp;&emsp;&emsp;<a href="./html/一级页面/理疗工具.html">理疗工具</a>&emsp;&emsp;&emsp;<a href="./html/一级页面/穴位图.html">穴位图</a>&emsp;&emsp;&emsp;<a href="./html/一级页面/医学典籍.html">医学典籍</a>&emsp;&emsp;&emsp;<a href="./html/一级页面/历代名医.html">历代名医</a></div>
+                <div>
+                    友情链接：<a href="javascript:;">国家中医药管理局</a>&emsp;|&emsp;<a href="javascript:;">国家药品监督管理局</a>&emsp;|&emsp;<a href="javascript:;">国家卫生健康委员会</a>&emsp;|&emsp;<a href="javascript:;">中国政府网</a>
+                </div>
+                <div>联系电话：12345678901&emsp;|&emsp;电子邮箱：0000000000@163.com</div>
+                <div>京ICP备00000000号-0&emsp;|&emsp;ICP&emsp;|&emsp;公网安备0000000000号&emsp;|&emsp;文保网安备案号0000000000</div>
+
+                <div>本网站内容版权所有未经许可禁止转载</div>
+            </div>
+        </footer>
+        <div class="ip">
+            <img src="./img/首页/bg.gif" alt="">
+        </div>
+        <div class="chat">
+            <div class="chat_top">
+                <p>小本很高兴为您服务</p>
+                <span class="iconfont icon-guanbi"></span>
+            </div>
+            <div class="chat_box">
+                <div class="ip_div" id="first_question">
+                    <p class="ip_input">您好，请问有什么可以帮助您的嘛？</p>
+                </div>
+            </div>
+            <div class="input_box">
+                <textarea name="" id="" cols="50" rows="5">您可以在这里输入想和小本说的话哦</textarea>
+                <button class="send">发送</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,30 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "13084286",
+      "name": "叶子",
+      "font_class": "yezi",
+      "unicode": "e605",
+      "unicode_decimal": 58885
+    },
+    {
+      "icon_id": "23059093",
+      "name": "动物",
+      "font_class": "shengwu-04",
+      "unicode": "e60c",
+      "unicode_decimal": 58892
+    },
+    {
+      "icon_id": "23994376",
+      "name": "矿物品",
+      "font_class": "kuangwupin",
+      "unicode": "e604",
+      "unicode_decimal": 58884
+    }
+  ]
+}

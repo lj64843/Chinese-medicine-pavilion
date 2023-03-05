@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>华佗~上医医国，中医医人，下医治病</title>
+    <link rel="shortcut icon" href="../../../img/logo.ico">
+    <link rel="stylesheet" href="../../../bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="../../../css/doctor_son.css">
+    <script src="../../../js/doctor_son.js" language="javascript" type="text/javascript"></script>
+    <script src="../../../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1),
+                getCookie = localStorage.getItem(str);
+            if (getCookie) {
+                $("html,body").scrollTop(getCookie);
+            }
+        });
+        $(window).scroll(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(window).scrollTop(); //在zepto下这里使用$(document)是获取不到页面滚动的高度，在jq下是可以的
+            localStorage.setItem(str, top);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="back_block">
+        <p id="back"><strong>«</strong>返回</p>
+    </div>
+    <header>
+        <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+            <!-- Indicators -->
+            <ol class="carousel-indicators">
+                <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+            </ol>
+
+            <!-- Wrapper for slides -->
+            <div class="carousel-inner" role="listbox">
+                <div class="item active">
+                    <img src="../../../img/名医子页/banner/banner1.png" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../../../img/名医子页/banner/banner2.jpg" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+                <div class="item">
+                    <img src="../../../img/名医子页/banner/banner3.png" alt="...">
+                    <div class="carousel-caption">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Controls -->
+            <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </header>
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="pic col-lg-5 col-md-5 col-sm-12 col-xs-12">
+                    <img src="../../../img/名医子页/华佗.png" alt="">
+                </div>
+                <div class="text col-lg-7 col-md-7 col-sm-12 col-xs-12">
+                    <p>华佗经过数十年的医疗实践，熟练地掌握了养生、方药、针灸和手术等治疗手段，精通内、外、妇、儿各科，临证施治，诊断精确，方法简捷，疗效神速，被誉为“神医”。 华佗是中国医学史上为数不多的杰出外科医生之一，他善用麻醉、针、灸等方法，并擅长开胸破腹的外科手术。外科手术的方法并非建立在“尊儒”的文化基础上的中医学的主流治法，在儒家的“身体发肤，受之父母”的主张之下，外科手术在中医学当中并没有大规模的发展起来。</p>
+                </div>
+
+            </div>
+            <div class="row">
+                <div class="detail">
+                    <ul>
+                        <li type="square">
+                            华佗
+                        </li>
+                    </ul>
+                    <p>
+                        华佗（约公元145年－公元208年），字元化，一名旉，沛国谯县（今安徽亳州）人，东汉末年著名的医学家。
+                    </p>
+                </div>
+                <div class="detail detail_1">
+                    <ul>
+                        <li type="square">
+                            基本介绍
+                        </li>
+                    </ul>
+                    <p>
+                        华佗，字元化，沛国谯(今安徽省亳州市)人。据考证，他约生于汉永嘉元年（公元145年），卒于建安十三年（公元208年）。著名医学家。少时曾在外游学，钻研医术而不求仕途，行医足迹遍及安徽、山东、河南、江苏等地。华佗一生行医各地，声誉颇著，在医学上有多方面的成就。他精通内、外、妇、儿、针灸各科，对外科尤为擅长。后因不服曹操征召被杀，所著医书已佚。今亳州市有“华佗庵”等遗迹。
+                    </p>
+                </div>
+                <div class="detail detail_1">
+                    <ul>
+                        <li type="square">
+                            轶事典故
+                        </li>
+                    </ul>
+                    <p>
+                        <span>漆叶青黏散</span>
+                        <br>华佗一生有弟子多人，其中彭城的樊阿、广陵的吴普和西安的李当之，皆闻名于世。吴普著有《吴普本草》，李当之著有《李当之药录》，樊阿喜针灸，这三个弟子后来均成为有名望的医家。 为了将医学经验留传于后世，华佗晚年精心于医书的撰写，计有《青囊书》、《枕中灸刺经》等多部著作，可惜失传。吴普遵照华佗的医术治病，许多人被治好救活了。华佗对吴普说：“人的身体应该得到运动，只是不应当过度罢了。运动后水谷之气才能消化，血脉环流通畅，病就不会发生，比如转动着的门轴不会腐朽就是这样。因此以前修仙养道的人常做“气功”之类的锻炼，他们摹仿熊攀挂树枝和鸱鹰转颈顾盼，舒腰展体，活动关节，用来求得延年益寿”。樊阿精通针疗法。所有的医生都说背部和胸部内脏之间不可以乱扎针，即使下针也不能超过四分深，而樊阿针刺背部穴位深到一二寸，在胸部的巨阙穴扎进去五六寸，而病常常都被治好。樊阿向华佗讨教可以服用而且对人体有好处的药方，华佗便拿“漆叶青黏散”教给他。药方用漆叶的碎屑一升，青黏碎屑十四两，按这个比例配制，说是长期服用此药能打掉三种寄生虫，对五脏有利，使身体轻便，使人的头发不会变白。樊阿遵照他的话去做，活到一百多岁。
+                        <br><span>刮骨疗伤</span>
+                        <br>在罗贯中的《三国演义》中，有一段华佗为关羽刮骨疗毒的描写，讲的是关羽在襄阳之战时右臂为魏军毒箭所中。后来，伤口渐渐肿大，十分疼痛，不能动弹。华佗为关羽剖臂刮骨，去除骨上剧毒，而关羽神色不变，尚在与人下棋。这个故事原本是颂扬关羽之神勇、有毅力、能忍耐，也同时说明了神医华佗的医技高明。博得人们的称赞和敬佩。他是我们外科医学的鼻祖。 这是《三国演义》和湖北《襄阳府志》上记载、在民间广为流传的一个根据事实虚构的故事。关羽虽然有刮骨疗伤，但是华佗早已在几年前死去。
+                        <br><span>曹操头风病</span>
+                        <br>华佗由于治学得法，医术迅速提高，名震远近。正当华佗热心在民间奉献自己的精湛医术时，崛起于中原动乱中的曹操，闻而相召。原来曹操早年得了一种头风病，中年以后，日益严重。每发，心乱目眩，头痛难忍。诸医施治，疗效甚微。华佗应召前来诊视后，在曹操胸椎部的鬲俞穴进针，片刻便脑清目明，疼痛立止。曹操十分高兴。但华佗却如实相告：“您的病，乃脑部痼疾，近期难于根除，须长期攻治，逐步缓解，以求延长寿命。”曹操听后，以为华佗故弄玄虚，因而心中不悦，只是未形于色。他不仅留华佗于府中，还允许他为百姓治病。
+                    </p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="detail detail_1">
+                    <ul>
+                        <li type="square">
+                            图册
+                        </li>
+                    </ul>
+                </div>
+                <div class="photos">
+                    <div class="photo" title="点击查看详情">
+                        <img src="../../../img/名医子页/华佗/华佗1.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗2.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗3.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗4.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗5.jpg" alt="">
+                        <p>人命至重，有贵千金，一方济之，德逾于此</p>
+                    </div>
+                    <div class="photo" title="点击查看详情">
+                        <img src="../../../img/名医子页/华佗/华佗2.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗1.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗3.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗4.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗5.jpg" alt="">
+                        <p>人命至重，有贵千金，一方济之，德逾于此</p>
+                    </div>
+                    <div class="photo" title="点击查看详情">
+                        <img src="../../../img/名医子页/华佗/华佗3.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗2.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗1.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗4.jpg" alt="">
+                        <img src="../../../img/名医子页/华佗/华佗5.jpg" alt="">
+                        <p>人命至重，有贵千金，一方济之，德逾于此</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- jQuery (Bootstrap 的所有 JavaScript 插件都依赖 jQuery，所以必须放在前边) -->
+    <script src="https://fastly.jsdelivr.net/npm/jquery@1.12.4/dist/jquery.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <!-- 加载 Bootstrap 的所有 JavaScript 插件。你也可以根据需要只加载单个插件。 -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js" integrity="sha384-aJ21OjlMXNL5UyIl/XNwTMqvzeRMZH2w8c5cRVpzpU8Y5bApTppSuUkhZXN0VxHd" crossorigin="anonymous"></script>
+</body>
+
+</html>

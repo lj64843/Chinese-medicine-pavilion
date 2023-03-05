@@ -1,0 +1,65 @@
+{
+  "id": "",
+  "name": "",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "1101",
+      "name": "植物",
+      "font_class": "zhiwu",
+      "unicode": "f00ac",
+      "unicode_decimal": 983212
+    },
+    {
+      "icon_id": "1190108",
+      "name": "中药饮片",
+      "font_class": "zhongyaoyinpian",
+      "unicode": "e6f5",
+      "unicode_decimal": 59125
+    },
+    {
+      "icon_id": "15217432",
+      "name": "草木犀",
+      "font_class": "caomuxi",
+      "unicode": "e8cd",
+      "unicode_decimal": 59597
+    },
+    {
+      "icon_id": "15217440",
+      "name": "黑麦草",
+      "font_class": "heimaicao",
+      "unicode": "e8ce",
+      "unicode_decimal": 59598
+    },
+    {
+      "icon_id": "15222016",
+      "name": "甘草",
+      "font_class": "gancao",
+      "unicode": "e8f7",
+      "unicode_decimal": 59639
+    },
+    {
+      "icon_id": "15222031",
+      "name": "益母草",
+      "font_class": "yimucao",
+      "unicode": "e8fb",
+      "unicode_decimal": 59643
+    },
+    {
+      "icon_id": "15222033",
+      "name": "夏枯草",
+      "font_class": "xiakucao",
+      "unicode": "e8fa",
+      "unicode_decimal": 59642
+    },
+    {
+      "icon_id": "17937335",
+      "name": "四叶草",
+      "font_class": "siyecao",
+      "unicode": "e60b",
+      "unicode_decimal": 58891
+    }
+  ]
+}

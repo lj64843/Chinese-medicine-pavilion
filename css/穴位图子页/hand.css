@@ -1,0 +1,40 @@
+.left_pic {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.left_pic img {
+    width: 72%;
+}
+
+.dot1 {
+    top: 52%;
+    left: 53%;
+}
+
+.text1 {
+    top: 56%;
+    left: 51%;
+}
+
+.dot2 {
+    top: 65%;
+    left: 60%;
+}
+
+.text2 {
+    top: 69%;
+    left: 58%;
+}
+
+.dot3 {
+    top: 43%;
+    left: 73%;
+}
+
+.text3 {
+    top: 47%;
+    left: 71%;
+}

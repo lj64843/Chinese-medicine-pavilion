@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>穴位图~所出为井，所溜为荥，所注为输，所行为经，所入为合</title>
+    <link rel="shortcut icon" href="../../img/logo.ico">
+    <link rel="stylesheet" href="../../css/acupoint.css">
+    <link rel="stylesheet" href="../../css/acu.css">
+    <script src="../../js/acupoint.js" language="javascript" type="text/javascript"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1),
+                getCookie = localStorage.getItem(str);
+            if (getCookie) {
+                $("html,body").scrollTop(getCookie);
+            }
+        });
+        $(window).scroll(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(window).scrollTop(); //在zepto下这里使用$(document)是获取不到页面滚动的高度，在jq下是可以的
+            localStorage.setItem(str, top);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="back_block">
+        <p id="back"><strong>«</strong><a href="../../index.html">返回</a></p>
+    </div>
+    <div class="a3d"></div>
+    <script src="../../js/穴位图bg.js"></script>
+    <section>
+        <div class="turn">
+            <video src="../../video/5月11日(2).mp4" muted="'muted" autoplay="autoplay" loop="loop"></video>
+        </div>
+        <div class="branch">
+            <div class="d_block block1">
+                <div>
+                    <div class="out">
+                        <h2>头部</h2>
+                        <p>太阳穴、百会穴、颊车穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/头部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="out">
+                        <h2>颈部</h2>
+                        <p>人迎穴、廉泉穴、天突穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/颈部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="out">
+                        <h2>胸部</h2>
+                        <p>库房穴、乳根穴、玉堂穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/胸部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d_block block2">
+                <div>
+                    <div class="out">
+                        <h2>腹部</h2>
+                        <p>丹田穴、天枢穴、中脘穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/腹部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="mid">
+                        <img src="../../img/logo.png" alt="">
+                    </div>
+                </div>
+                <div>
+                    <div class="out">
+                        <h2>手部</h2>
+                        <p>劳宫穴、养老穴、胃肠穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/手部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="d_block block3">
+                <div>
+                    <div class="out">
+                        <h2>背部</h2>
+                        <p>肺俞穴、肝俞穴、关元俞等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/背部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="out">
+                        <h2>腿部</h2>
+                        <p>风市穴、阳陵泉穴、丰隆穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/腿部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <div class="out">
+                        <h2>足部</h2>
+                        <p>独阴穴、里内庭穴、涌泉穴等</p>
+                    </div>
+                    <div class="in">
+                        <a href="../二级及以下页面/穴位图子页/足部.html">
+                            <p>查看详情</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+
+</html>

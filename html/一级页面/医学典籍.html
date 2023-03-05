@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>医学典籍~取其精华，古为今用</title>
+    <link rel="shortcut icon" href="../../img/logo.ico">
+    <link rel="stylesheet" href="../../css/book.css">
+    <script src="../../js/book.js" language="javascript" type="text/javascript"></script>
+    <script src="../../js/jquery.min.js"></script>
+    <script>
+        $(function() {
+            $(".right div").hover(function() {
+                $(this).siblings("div").stop().fadeTo(400, 0.4);
+            }, function() {
+                $(this).siblings("div").stop().fadeTo(400, 1);
+            })
+            $(".right img").hover(function() {
+                $(this).siblings("img").stop().fadeTo(400, 0.4);
+                $(this).siblings("p").stop().show();
+            }, function() {
+                $(this).siblings("img").stop().fadeTo(400, 1);
+                $(this).siblings("p").stop().hide();
+            })
+            $(".right p").hover(function() {
+                $(this).show();
+            }, function() {
+                $(this).hide();
+            })
+            $(".right p").hide();
+
+        });
+        $(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1),
+                getCookie = localStorage.getItem(str);
+            if (getCookie) {
+                $("html,body").scrollTop(getCookie);
+            }
+        });
+        $(window).scroll(function() {
+            var str = window.location.href;
+            str = str.substring(str.lastIndexOf("/") + 1);
+            var top = $(window).scrollTop(); //在zepto下这里使用$(document)是获取不到页面滚动的高度，在jq下是可以的
+            localStorage.setItem(str, top);
+        });
+    </script>
+</head>
+
+<body>
+    <div class="back_block">
+        <p id="back"><strong>«</strong>返回</p>
+    </div>
+    <header>
+        <img src="../../img/医学典籍/banner2.png" alt="">
+    </header>
+    <section>
+        <div class="main">
+            <div class="heading">
+                <img src="../../img/医学典籍/四大经典.jpg" alt="">
+                <div>
+                    <h2>
+                        中医四大经典
+                    </h2>
+                    <p>
+                        人与天地相参，与日月相应
+                    </p>
+                </div>
+            </div>
+            <div class="content">
+                <div class="menu">
+                    <div class="nav">
+                        <h3>01</h3>
+                        <p>《难经》</p>
+                    </div>
+                    <div class="nav">
+                        <h3>02</h3>
+                        <p>《伤寒杂病论》</p>
+                    </div>
+                    <div class="nav">
+                        <h3>03</h3>
+                        <p>《黄帝内经》</p>
+                    </div>
+                    <div class="nav">
+                        <h3>04</h3>
+                        <p>《神农本草经》</p>
+                    </div>
+                </div>
+                <div class="detail">
+                    <div class="con con1">
+                        <div>
+                            <h3>《难经》<a href="../二级及以下页面/书籍子页/难经.html">详情</a></h3>
+                            <p>
+                                全书共八十一难，采用问答方式，探讨和论述了中医的一些理论问题，内容包括脉诊、经络、脏腑、阴阳、病因、病机、营卫、腧穴、针刺、病证等方面。其中，一至二十二难论脉，二十三至二十九难论经络，三十至四十七难论脏腑，四十八至六十一难论病，六十二至六十八难论腧穴，六十九至八十一难论针法。书中首创独取寸口及寸关尺及浮中沉三部九候的切脉方法，脉证相参的辨证观，为中医脉学的发展做出了杰出贡献。在藏象学说方面，《难经》突出肾的重要性，建立了“肾（命门）-元气-三焦”为轴心的整体生命观。其创立的命门学说，成为中医理论体系的重要组成部分。在经络学说方面，简明而系统地阐述了任脉、督脉、冲脉、带脉、阳维、阴维、阳跷、阴跷八条奇经的功能特点、循行路线、病变证候及其与十二正经的功能联系等，并总称之为“奇经八脉”。
+                            </p>
+                        </div>
+                        <div><video src="../../video/难经.mp4" controls="controls" muted="'muted" poster="../../img/医学典籍/难经.jpg"></video></div>
+                    </div>
+                    <div class="con con2">
+                        <div>
+                            <h3>《伤寒杂病论》<a href="../二级及以下页面/书籍子页/伤寒杂病论.html">详情</a></h3>
+                            <p>
+                                《伤寒杂病论》是中国传统医学著作之一，是一部论述外感病与内科杂病为主要内容的医学典籍，作者是东汉末年张仲景，是中国中医院校开设的主要基础课程之一。《伤寒杂病论》系统地分析了伤寒的原因、症状、发展阶段和处理方法，创造性地确立了对伤寒病的“六经分类”的辨证施治原则，奠定了理、法、方、药的理论基础。 公元3世纪初，张仲景博览群书，广采众方，凝聚毕生心血，写就《伤寒杂病论》一书。中医所说的伤寒实际上是一切外感病的总称，它包括瘟疫这种传染病。该书成书约在公元200年～210年左右。原书失散后，经王叔和等人收集整理校勘，分编为《伤寒论》和《金匮要略》两部。《伤寒论》共10卷，专门论述伤寒类急性传染病。
+                            </p>
+                        </div>
+                        <div><video src="../../video/难经.mp4" controls="controls" muted="'muted" poster="../../img/医学典籍/伤寒杂病论.jpg"></video></div>
+                    </div>
+                    <div class="con con3">
+                        <div>
+                            <h3>《黄帝内经》<a href="../二级及以下页面/书籍子页/黄帝内经.html">详情</a></h3>
+                            <p>
+                                《黄帝内经》分《灵枢》、《素问》两部分，是中国最早的医学典籍，传统医学四大经典著作之一（其余三者为《难经》、《伤寒杂病论》、《神农本草经》）。 《黄帝内经》是一本综合性的医书，在黄老道家理论上建立了中医学上的“阴阳五行学说”、“脉象学说”、“藏象学说”、“经络学说”、“病因学说”、“病机学说”、“病症”、“诊法”、“论治”及“养生学”、“运气学”等学说，从整体观上来论述医学，呈现了自然、生物、心理、社会“整体医学模式”（另据现代学者考证，认为今本中的黄老道家痕迹是隋唐时期的道士王冰窜入）。 其基本素材来源于中国古人对生命现象的长期观察、大量的临床实践以及简单的解剖学知识。《黄帝内经》奠定了人体生理、病理、诊断以及治疗的认识基础，是中国影响极大的一部医学著作，被称为医之始祖。
+                            </p>
+                        </div>
+                        <div><video src="../../video/难经.mp4" controls="controls" muted="'muted" poster="../../img/医学典籍/黄帝内经.jpg"></video></div>
+                    </div>
+                    <div class="con con4">
+                        <div>
+                            <h3>《神农本草经》<a href="../二级及以下页面/书籍子页/神农本草经.html">详情</a></h3>
+                            <p>
+                                《神农本草经》又称《本草经》或《本经》，托名“神农”所作，实成书于汉代，是中医四大经典著作之一，是已知最早的中药学著作。《神农本草经》全书分三卷，载药365种，以三品分类法，分上、中、下三品，文字简练古朴，成为中药理论精髓。《神农本草经》记载了365种药物的疗效，多数真实可靠，仍是临床常用药；它提出了辨证用药的思想，所论药物适应病症能达170多种，对用药剂量、时间等都有具体规定，这也对中药学起到了奠基作用。相传起源于神农氏，代代口耳相传，于东汉时期集结整理成书，成书非一时，作者亦非一人，秦汉时期众多医学家搜集、总结、整理当时药物学经验成果的专著，是对中国中医药的第一次系统总结。其中规定的大部分中药学理论和配伍规则以及提出的“七情和合”原则在几千年的用药实践中发挥了巨大作用，是中医药药物学理论发展的源头。
+                            </p>
+                        </div>
+                        <div><video src="../../video/难经.mp4" controls="controls" muted="'muted" poster="../../img/医学典籍/神农本草经.jpg"></video></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="divid">
+            <img src="../../img/医学典籍/分割线.png" alt="">
+        </div>
+        <div class="recommend">
+            <div class="left">
+                <h3>中医典籍推荐</h3>
+                <p>仰观宇宙。体察万物，顺应四时，和于节气</p>
+                <p>从生产生活实践中，提炼出来的对生命的深邃思索，蕴藏着道法自然、天人合一的哲学思想。</p>
+                <button>查看更多</button>
+            </div>
+            <div class="right">
+                <div>
+                    <div>
+                        <img src="../../img/医学典籍/灵柩.jpg" alt="">
+                        <p>《灵柩》</p>
+                    </div>
+                    <div>
+                        <img src="../../img/医学典籍/华式中藏经.png" alt="">
+                        <p>《华式中藏经》</p>
+                    </div>
+                    <div>
+                        <img src="../../img/医学典籍/针灸甲乙经.jpg" alt="">
+                        <p>《针灸甲乙经》</p>
+                    </div>
+                </div>
+                <div>
+                    <div>
+                        <img src="../../img/医学典籍/金匮要略.jpg" alt="">
+                        <p>《金匮要略》</p>
+                    </div>
+                    <div>
+                        <img src="../../img/医学典籍/脉经.jpg" alt="">
+                        <p>《脉经》</p>
+                    </div>
+                    <div>
+                        <img src="../../img/医学典籍/素问.jpg" alt="">
+                        <p>《素问》</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="more">
+            <div class="subject">
+                <img src="../../img/医学典籍/分割线2.png" alt="">
+                <h3>现代医学典籍</h3>
+                <p>正己者，谓明理以尽数也；正物者，谓能用药以对病也。
+                    <br>凡为医道，必先正己，然后正物。</p>
+            </div>
+            <div class="pic_text">
+                <div>
+                    <img src="../../img/医学典籍/轻轻松松学中药方.png" alt="">
+                    <div>
+                        <h4>《轻轻松松学中药方》</h4>
+                        <p>
+                            中医古籍出版社2021年4月出版的图书，作者是褚四红。这本书糅合传统中医理论，巧用中药方健身防病，从中药基础，到应用实践，循序渐进的讲解。发扬国粹、雅俗共赏、医患咸易、由浅入深，以学习中药方为主线，通俗易懂地糅合进中医学理论知识，更好地为百姓健康服务。
+                        </p>
+                        <button>查看详情</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../img/医学典籍/经方百案研读.png" alt="">
+                    <div>
+                        <h4>《经方百案研读》</h4>
+                        <p>
+                            在《经方百案研读》中，作者选取了使用伤寒理论和伤寒经方进行辨证论治的名医验案一百一十案进行研读。第一步是阅读患者的证候；第二步是自己独立进行辨证论治；第三步是研读医案中的医生的辨证论治过程；第四步是将自己的辨证论治和医案中的辨证论治进行对比研究。
+                        </p>
+                        <button>查看详情</button>
+                    </div>
+                </div>
+                <div>
+                    <img src="../../img/医学典籍/疑难病症思辨录.png" alt="">
+                    <div>
+                        <h4>《疑难病证思辨录》</h4>
+                        <p>
+                            围绕小说中涉及的问题，分专题作了阐述，精彩纷呈，提出了不少既出自中医又源于当今临床的新见解、新方法、新经验，充分反映了新中国培养的首届中医院校毕业生在几十年教学、临床、科研中严谨治学、辛勤探索、理性思索的成果，可作为中医院校毕业后继续教育的优秀读物。
+                        </p>
+                        <button>查看详情</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div>
+            <p>如果您需要某一本书的电子版，请在下方留下您想要的书籍名称以及您的电子邮箱，我们会在2个工作日内将指定书籍的电子版发送至您的邮箱。</p>
+            <input type="text" value="您所需要的书籍名称">
+            <input type="text" value="您的电子邮箱">
+            <button>提交</button>
+        </div>
+    </footer>
+</body>
+
+</html>

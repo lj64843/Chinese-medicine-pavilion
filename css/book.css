@@ -1,0 +1,478 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+html,
+body {
+    background-image: url(../img/封面/背景.png);
+}
+
+.con a {
+    font-size: 14px;
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0e4738;
+}
+
+.con a:hover {
+    color: cadetblue;
+}
+
+.back_block {
+    width: 1360px;
+    height: 50px;
+    position: absolute;
+    left: 50%;
+    margin-left: -680px;
+    box-sizing: border-box;
+    padding-top: 20px;
+    padding-left: 25px;
+    color: white;
+    cursor: pointer;
+    z-index: 10;
+}
+
+.back_block>p>strong {
+    font-size: 20px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+}
+
+header img {
+    margin: auto;
+    width: 1380px;
+}
+
+section {
+    position: relative;
+    top: -20px;
+    margin-top: 0px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.main {
+    width: 1380px;
+    height: 850px;
+    position: relative;
+}
+
+.heading {
+    width: 100%;
+    display: flex;
+}
+
+.heading img {
+    width: 50%;
+}
+
+.heading div {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 100px;
+    box-sizing: border-box;
+}
+
+.heading h2 {
+    font-family: 隶书;
+    font-size: 80px;
+    color: #0e4738;
+    font-weight: 500;
+}
+
+.heading p {
+    font-size: 16px;
+    letter-spacing: 30px;
+    color: silver;
+    padding-left: 30px;
+    box-sizing: border-box;
+    padding-top: 20px;
+}
+
+.content {
+    width: 1280px;
+    display: flex;
+    position: absolute;
+    top: 300px;
+    left: 80px;
+}
+
+.menu {
+    width: 200px;
+    margin-right: 10px;
+}
+
+.nav {
+    width: 200px;
+    height: 100px;
+    background-color: #0e4738;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 5px solid #f7d68e;
+    font-size: 14px;
+    letter-spacing: 3px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.nav h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.nav:hover {
+    background-color: #f7d68e;
+    color: black;
+}
+
+.detail {
+    flex: 1;
+}
+
+.con {
+    width: 100%;
+    height: 420px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.con div:nth-child(1) {
+    width: 500px;
+    height: 420px;
+    background: #fff5e2f6;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    margin-right: 15px;
+    position: absolute;
+    left: 20px;
+    top: 0;
+}
+
+.con h3 {
+    line-height: 50px;
+    font-weight: 500;
+    display: inline;
+}
+
+.con div:nth-child(2) {
+    width: 550px;
+    height: 420px;
+    display: flex;
+    background-color: #fff5e2f6;
+    position: absolute;
+    right: 0;
+    top: 0;
+}
+
+.con p {
+    font-size: 14px;
+    height: 310px;
+    line-height: 25px;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar {
+    width: 2px;
+    height: 0px;
+    /* background-color: #f5f5f5; */
+    /* display: none; */
+}
+
+
+/*定义滚动条轨道 内阴影+圆角*/
+
+ ::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0);
+    border-radius: 10px;
+    /* background-color: #f5f5f5; */
+}
+
+
+/*定义滑块 内阴影+圆角*/
+
+ ::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.1);
+    background-color: rgba(195, 195, 195, 0.2);
+}
+
+.con video {
+    width: 100%;
+    margin: auto;
+}
+
+.con2 {
+    display: none;
+}
+
+.con3 {
+    display: none;
+}
+
+.con4 {
+    display: none;
+}
+
+.divid {
+    width: 1380px;
+    background-color: #0e4738;
+    display: flex;
+}
+
+.divid img {
+    margin: auto;
+    width: 50%;
+}
+
+.recommend {
+    margin-top: 100px;
+    width: 1380px;
+    /* height: 500px; */
+    background-color: #0e4738;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.left {
+    width: 40%;
+    color: white;
+    padding-left: 40px;
+    padding-right: 40px;
+    box-sizing: border-box;
+}
+
+.left h3 {
+    font-size: 30px;
+    padding-bottom: 20px;
+}
+
+.left p {
+    font-size: 16px;
+    padding-bottom: 40px;
+}
+
+.left button {
+    width: 130px;
+    height: 50px;
+    font-size: 18px;
+    border-radius: 20px;
+    box-sizing: border-box;
+}
+
+.right {
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.right>div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    background-color: black;
+}
+
+.right>div>div {
+    position: relative;
+    width: 32.9%;
+}
+
+.right img {
+    width: 100%;
+    cursor: pointer;
+}
+
+.right img~p {
+    position: absolute;
+    width: 100%;
+    height: 50px;
+    line-height: 50px;
+    font-size: 22px;
+    top: 50%;
+    margin-top: -25px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.8);
+    /* display: none; */
+    cursor: pointer;
+}
+
+.more {
+    margin-top: 100px;
+    width: 1380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject {
+    width: 1380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.subject img {
+    width: 50px;
+}
+
+.subject h3 {
+    font-size: 30px;
+    letter-spacing: 5px;
+    margin-top: 10px;
+}
+
+.subject p {
+    width: 800px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.pic_text {
+    margin-top: 50px;
+    width: 1180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.pic_text>div {
+    width: 360px;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.5s;
+    padding: 20px 10px;
+}
+
+.pic_text>div:hover {
+    box-shadow: 1px 1px 5px 5px #c3c3c3;
+}
+
+.pic_text>div:nth-child(1) {
+    margin-left: 0px;
+}
+
+.pic_text img {
+    width: 300px;
+    margin-bottom: 30px;
+}
+
+.pic_text>div>div {
+    text-align: center;
+}
+
+.pic_text>div>div h4 {
+    font-size: 22px;
+    margin-bottom: 20px;
+    /* color: #a3a3a3; */
+}
+
+.pic_text>div>div p {
+    font-size: 16px;
+    margin-bottom: 20px;
+    height: 160px;
+    padding: 0px 20px;
+    text-align: justify;
+    /* color: tomato; */
+}
+
+.pic_text>div>div button {
+    width: 100px;
+    height: 40px;
+    border-radius: 20px;
+    border: 0px;
+    cursor: pointer;
+    transition: all 0.5s;
+}
+
+.pic_text>div:hover button {
+    background-color: #fdcd69;
+    color: white;
+}
+
+footer {
+    margin-top: 100px;
+    width: 100%;
+    display: flex;
+}
+
+footer>div {
+    width: 1380px;
+    margin: auto;
+    height: 350px;
+    background-image: url(../img/医学典籍/footer.jpg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    color: white;
+}
+
+footer p {
+    padding: 40px 0px;
+    padding-top: 70px;
+    font-size: 14px;
+    text-align: center;
+    width: 550px;
+    color: white;
+    margin: 0 auto;
+}
+
+footer input {
+    text-align: center;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 20px;
+    width: 400px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 0px;
+    border-bottom: 1px solid white;
+    color: white;
+    text-decoration: none;
+    box-shadow: none;
+    outline: none;
+}
+
+input:focus {
+    outline: none;
+}
+
+footer input:nth-child(3) {
+    margin-bottom: 30px;
+}
+
+footer button {
+    margin: 0 auto;
+    display: block;
+    width: 400px;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0);
+    border: 1px solid white;
+    color: white;
+}
